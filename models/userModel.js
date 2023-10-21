@@ -1,5 +1,5 @@
-const mongoose = require('mongoose')
-var plm = require('passport-local-mongoose')
+const mongoose = require('mongoose');
+var plm = require('passport-local-mongoose');
 
 mongoose.connect("mongodb://127.0.0.1:27017/spotify")
 
@@ -28,4 +28,3 @@ const userSchema = mongoose.Schema({
 userSchema.plugin(plm);
 
 const userModel = mongoose.model('user',userSchema)
-module.export = userModel
