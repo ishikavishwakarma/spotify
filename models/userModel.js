@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 var plm = require('passport-local-mongoose')
 
-mongoose.connect("mongodb://127.0.0.1:27017/passjs")
+mongoose.connect("mongodb://127.0.0.1:27017/spotify")
 
 const userSchema = mongoose.Schema({
     username :String,
